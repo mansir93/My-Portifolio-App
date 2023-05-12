@@ -1,5 +1,5 @@
 import React from "react";
-import Typical from "react-typical";
+import Typewriter from "typewriter-effect";
 import "./contactme.css";
 
 const Contactoption = () => {
@@ -7,10 +7,19 @@ const Contactoption = () => {
     <div className="col-lg-6">
       <div className="contact-me-message ">
         <h1>
-          <Typical
-            loop={Infinity}
-            steps={["Get In Touch📧", 2000, "Get In Touch📧", 2000]}
-          />
+          <Typewriter
+                  onInit={(typewriter) => {
+                    typewriter
+
+                      .typeString("Get In Touch📧")
+                      .pauseFor(2000)
+                      .deleteAll()
+                      .typeString("Get In Touch📧")
+                      .start();
+                  }}
+                />
+
+
         </h1>
         <div className="colz-icons">
           <a

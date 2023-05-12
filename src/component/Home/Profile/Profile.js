@@ -1,5 +1,5 @@
 import React from "react";
-import Typical from "react-typical";
+import Typewriter from "typewriter-effect";
 
 import "./profile.css";
 
@@ -61,22 +61,28 @@ const Home = () => {
 
             <div className="profile-details-name">
               <span className="primary-text">
-                Hello, I'm <span className="highlighted-text">Mansir</span> Abdul Aziz
+                Hello, I'm <span className="highlighted-text">Mansir</span>{" "}
+                Abdul Aziz
               </span>
             </div>
 
             <div className="profile-details-role">
               <h1>
-                <Typical
-                  loop={Infinity}
-                  steps={[
-                    "Forgetti Dev",
-                    2000,
-                    "Front-end Dev",
-                    2000,
-                    "React Dev",
-                    2000,
-                  ]}
+                <Typewriter
+                  onInit={(typewriter) => {
+                    typewriter
+
+                      .typeString("Forgetti Dev")
+
+                      .pauseFor(2000)
+                      .deleteAll()
+                      .typeString("Front-end Dev")
+
+                      .pauseFor(2000)
+                      .deleteAll()
+                      .typeString("React Dev")
+                      .start();
+                  }}
                 />
               </h1>
               <span className="profile-name-tagline">
