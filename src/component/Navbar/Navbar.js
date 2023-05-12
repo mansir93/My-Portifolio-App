@@ -5,15 +5,15 @@ import { MdClose } from "react-icons/md";
 // import "./navbar.css";
 const Navbarmenu = () => (
   <>
-    <a href="#home">Home</a>
+    <a href="#home" className="hover:border-b-4 p-2 border-amber-600">Home</a>
 
-    <a href="#aboutme">AboutMe</a>
+    <a href="#aboutme" className="hover:border-b-4 p-2 border-amber-600">AboutMe</a>
 
-    <a href="#resume">Resume</a>
+    <a href="#resume" className="hover:border-b-4 p-2 border-amber-600">Resume</a>
 
-    <a href="#testimonial">Testimonial</a>
+    <a href="#testimonial" className="hover:border-b-4 p-2 border-amber-600">Testimonial</a>
 
-    <a href="#contactme">Contact</a>
+    <a href="#contactme" className="hover:border-b-4 p-2 border-amber-600">Contact</a>
   </>
 );
 
@@ -22,23 +22,27 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="flex justify-between w-full">
-        <div className="flex p-5">
-          <a className="" href="index.html">
+      <div className="flex justify-between w-full bg-blue-700 px-8">
+        <div className="flex text-white text-2xl m-2">
+          <a className="p-2 " href="index.html">
             FORGETTI
           </a>
         </div>
-        <div className="flex p-5 max-sm:hidden">
+        <div className="flex max-sm:hidden gap-5 text-white m-2">
           <Navbarmenu />
         </div>
-        <div className="hidden max-sm:flex p-5">
+        <div className="hidden max-sm:flex m-2 p-2">
           {toggle ? (
-            <MdClose onClick={() => setToggle(false)} />
+            <MdClose color="#fff" size={27} onClick={() => setToggle(false)} />
           ) : (
-            <CiMenuFries onClick={() => setToggle(true)} />
+            <CiMenuFries
+              color="#fff"
+              size={27}
+              onClick={() => setToggle(true)}
+            />
           )}
           {toggle && (
-            <div className="Navbar-animation">
+            <div className="Navbar-animation flex flex-col justify-end items-end text-end p-8 absolute top-10 right-0 mr-4 min-w-fit rounded drop-shadow">
               <Navbarmenu />
             </div>
           )}
