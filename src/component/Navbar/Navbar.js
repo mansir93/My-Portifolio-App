@@ -1,62 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
+import { CiMenuFries } from "react-icons/ci";
+import { MdClose } from "react-icons/md";
 
-import "./navbar.css";
+// import "./navbar.css";
+const Navbarmenu = () => (
+  <>
+    <a href="#home">Home</a>
+
+    <a href="#aboutme">AboutMe</a>
+
+    <a href="#resume">Resume</a>
+
+    <a href="#testimonial">Testimonial</a>
+
+    <a href="#contactme">Contact</a>
+  </>
+);
 
 const Navbar = () => {
+  const [toggle, setToggle] = useState(false);
+
   return (
-    <div className="navbar-container container-fluid">
-      <nav
-        className="navbar navbar-expand-lg ftco_navbar ftco-navbar-light"
-        id="ftco-navbar"
-      >
-        <div className="container">
-          <a className="navbar-brand" href="index.html">
+    <nav>
+      <div className="flex justify-between w-full">
+        <div className="flex p-5">
+          <a className="" href="index.html">
             FORGETTI
           </a>
-
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#ftco-nav"
-            aria-controls="ftco-nav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="fa fa-bars"></span> Menu
-          </button>
-          <div className="collapse navbar-collapse" id="ftco-nav">
-            <ul className="navbar-nav ml-auto mr-md-3">
-              <li className="nav-item active">
-                <a href="#home" className="nav-link">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#aboutme" className="nav-link">
-                  AboutMe
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#resume" className="nav-link">
-                  Resume
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#testimonial" className="nav-link">
-                  Testimonial
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#contactme" className="nav-link">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
-      </nav>
-    </div>
+        <div className="flex p-5 max-sm:hidden">
+          <Navbarmenu />
+        </div>
+        <div className="hidden max-sm:flex p-5">
+          {toggle ? (
+            <MdClose onClick={() => setToggle(false)} />
+          ) : (
+            <CiMenuFries onClick={() => setToggle(true)} />
+          )}
+          {toggle && (
+            <div className="Navbar-animation">
+              <Navbarmenu />
+            </div>
+          )}
+        </div>
+      </div>
+    </nav>
   );
 };
 
