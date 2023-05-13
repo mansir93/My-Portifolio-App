@@ -5,11 +5,8 @@ import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
-    <section>
-      <div
-        className="flex justify-around items-center w-full max-sm:flex-col-reverse p-8 bg-blue-900"
-        id="home"
-      >
+    <section id="home">
+      <div className="flex justify-around items-center w-full max-sm:flex-col-reverse p-8 bg-blue-900">
         <div className="flex flex-col ">
           <p className="text-xl text-white">
             Hello, I'm <span className="text-red-500">Mansir</span> Abdul Aziz
@@ -31,7 +28,10 @@ const Home = () => {
           </h1>
           <p className="text-white">I develop Awesome web pages</p>
           <div className="flex justify-around my-8">
-            <a href="#contactme" className="rounded-full px-16 py-2 w-42 text-center bg-blue-900 text-sm text-white mr-8  border-2 border-white  hover:border-red-500">
+            <a
+              href="#contactme"
+              className="rounded-full px-16 py-2 w-42 text-center bg-blue-900 text-sm text-white mr-8  border-2 border-white  hover:border-red-500"
+            >
               Hire Me
             </a>
             <a
