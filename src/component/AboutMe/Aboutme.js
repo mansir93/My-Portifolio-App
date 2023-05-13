@@ -16,7 +16,7 @@ export const Aboutme = () => {
           />
         </div>
 
-        <div className="max-sm:text-base p-1">
+        <div className="max-sm:text-base p-2">
           <h5 className="text-red-500 font-bold">My Highlights</h5>
           <br/>
           <p>
