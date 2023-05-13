@@ -31,11 +31,11 @@ const Home = () => {
           </h1>
           <p>I develop Awesome web pages</p>
           <div className="flex justify-around my-8">
-            <a href="#contactme" className="rounded-full px-8 py-4 w-40 text-center bg-blue-900 text-sm text-white mx-4 hover:border-4 border-red-500">
+            <a href="#contactme" className="rounded-full px-8 py-4 w-40 text-center bg-blue-900 text-sm text-white mr-8 hover:border-4 border-red-500">
               Hire Me
             </a>
             <a
-              className="rounded-full px-8 py-4 w-40 text-center bg-red-500 text-sm text-white mx-4 hover:border-4 border-white-500"
+              className="rounded-full px-8 py-4 w-40 text-center bg-red-500 text-sm text-white hover:border-4 border-white-500"
               href="mansir_cv.pdf"
               download="Mansir Abdul Aziz"
             >
