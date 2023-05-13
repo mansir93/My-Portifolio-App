@@ -7,7 +7,7 @@ export const Aboutme = () => {
     <section id="aboutme">
           <h3 className="text-center">About Me</h3>
           <p className="text-center">why choose me?</p>
-      <div className="flex justify-center shadow-2xl mx-16 max-sm:flex-col max-w-fit">
+      <div className="flex justify-center max-w-fit shadow-2xl mx-16 max-md:flex-col max-md:mx-4">
         <div className="max-md:hidden mx-8">
           <img
             src={require("../../Assets/my-pic.jpg")}
