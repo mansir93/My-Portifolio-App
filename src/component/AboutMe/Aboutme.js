@@ -7,15 +7,16 @@ export const Aboutme = () => {
     <section id="aboutme">
           <h3 className="text-center">About Me</h3>
           <p className="text-center">why choose me?</p>
-      <div className="flex justify-center max-w-fit shadow-2xl mx-16 max-md:flex-col max-md:mx-4">
+      <div className="flex justify-center max-w-fit shadow-2xl mr-16 max-md:flex-col max-md:mx-4">
         <div className="max-md:hidden mx-8 h-auto">
           <img
+          className=""
             src={require("../../Assets/my-pic.jpg")}
             alt="Mansir Abdul Aziz"
           />
         </div>
 
-        <div className="max-sm:text-base">
+        <div className="max-sm:text-base p-1">
           <h5 className="text-red-500 font-bold">My Highlights</h5>
           <br/>
           <p>
