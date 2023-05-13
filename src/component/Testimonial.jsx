@@ -1,13 +1,11 @@
 import React from "react";
-import Shape from "../Shape/Shape";
 
-import "./testimonial.css";
 
 const Testimonial = () => {
   return (
     <div className="testimonial-container" id="testimonial">
       <h3>Testimonial</h3>
-      
+
       <div className="divider">
         <hr />
       </div>
@@ -17,8 +15,11 @@ const Testimonial = () => {
             <div className="col-lg-4">
               <div className="card">
                 <div className="face front-face">
-                  <img src={require("../../Assets/client-1.jpg")}
-                            alt="" className="profile" />
+                  <img
+                    src={require("../Assets/client-1.jpg")}
+                    alt=""
+                    className="profile"
+                  />
                   <div className="pt-3 text-uppercase name">
                     YAKUBU ABDUL MUTALLIB
                   </div>
@@ -38,8 +39,11 @@ const Testimonial = () => {
             <div className="col-lg-4">
               <div className="card">
                 <div className="face front-face">
-                <img src={require("../../Assets/client-2.jpeg")}
-                            alt="" className="profile" />
+                  <img
+                    src={require("../Assets/client-2.jpeg")}
+                    alt=""
+                    className="profile"
+                  />
                   <div className="pt-3 text-uppercase name">SIEH FRANCIS</div>
                   <div className="designation">Full Stack Developer</div>
                 </div>
@@ -57,9 +61,14 @@ const Testimonial = () => {
             <div className="col-lg-4">
               <div className="card">
                 <div className="face front-face">
-                <img src={require("../../Assets/client-3.jpg")}
-                            alt="" className="profile" />
-                  <div className="pt-3 text-uppercase name">BAFFOUR AWUAH FELIX</div>
+                  <img
+                    src={require("../Assets/client-3.jpg")}
+                    alt=""
+                    className="profile"
+                  />
+                  <div className="pt-3 text-uppercase name">
+                    BAFFOUR AWUAH FELIX
+                  </div>
                   <div className="designation">Finance Director</div>
                 </div>
                 <div className="face back-face">
@@ -74,11 +83,10 @@ const Testimonial = () => {
               </div>
             </div>
           </div>
-          <Shape />
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default Testimonial;

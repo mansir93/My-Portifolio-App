@@ -1,8 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 
-// import "./profile.css";
-
 const Home = () => {
   return (
     <section id="home">

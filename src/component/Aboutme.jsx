@@ -1,6 +1,5 @@
 import React from "react";
 
-// import "./aboutme.css";
 
 export const Aboutme = () => {
   return (
@@ -11,7 +10,7 @@ export const Aboutme = () => {
         <div className="max-md:hidden mx-8 h-auto">
           <img
           className=""
-            src={require("../../Assets/my-pic.jpg")}
+            src={require("../Assets/my-pic.jpg")}
             alt="Mansir Abdul Aziz"
           />
         </div>

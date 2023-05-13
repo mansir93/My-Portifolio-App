@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { CiMenuFries } from "react-icons/ci";
 import { MdClose } from "react-icons/md";
 
-// import "./navbar.css";
 const Navbarmenu = () => (
   <>
     <a href="#home" className="hover:border-b-4 p-2 border-amber-600">Home</a>

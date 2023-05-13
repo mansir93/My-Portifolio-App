@@ -1,7 +1,6 @@
 import React,{ useState } from "react";
 import Typewriter from "typewriter-effect";
-import { validateEmail } from "../../utils";
-import "./contactme.css";
+import { validateEmail } from "../utils";
 
 const Contactoption = () => {
 
