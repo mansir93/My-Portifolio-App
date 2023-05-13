@@ -7,27 +7,29 @@ export const Aboutme = () => {
     <section id="aboutme">
           <h3 className="text-center">About Me</h3>
           <p className="text-center">why choose me?</p>
-      <div className="flex justify-center item-center">
-        <div>
+      <div className="flex justify-center shadow-2xl mx-16 max-sm:flex-col max-w-fit">
+        <div className="max-md:hidden mx-8">
           <img
             src={require("../../Assets/my-pic.jpg")}
             alt="Mansir Abdul Aziz"
           />
         </div>
 
-        <div>
-          <h5>My Highlights</h5>
+        <div className="p-4 max-sm:font-thin">
+          <h5 className="text-red-500 font-bold">My Highlights</h5>
+          <br/>
           <p>
             I am Mansir Abdul Aziz, a student at the University of Professional
             Studies Accra studying for a BSc in Information Technology
             Management.
           </p>
-
+<br/>
           <p>
             As a frontend junior developer, I have a passion for building
             user-friendly web applications and a strong foundation in frontend
             technologies such as HTML, CSS, JavaScript, and React Js .
           </p>
+          <br/>
           <p>
             In my free time, I enjoy learning new development frameworks and
             tools, and working on personal projects to improve my skills. I am

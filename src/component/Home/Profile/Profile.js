@@ -6,8 +6,8 @@ import Typewriter from "typewriter-effect";
 const Home = () => {
   return (
     <section id="home">
-      <div className="flex justify-around items-center w-full max-sm:flex-col-reverse p-8 bg-blue-900">
-        <div className="flex flex-col ">
+      <div className="flex justify-around items-center w-full max-md:flex-col-reverse p-8 bg-blue-900">
+        <div className="flex flex-col items-center">
           <p className="text-xl text-white">
             Hello, I'm <span className="text-red-500">Mansir</span> Abdul Aziz
           </p>
@@ -43,7 +43,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="bg-[url('/src/Assets/profile-pic.jpg')] bg-cover h-96 w-96 rounded-full mb-16 hover:border border-white hover:scale-105 ease-out "></div>
+        <div className="bg-[url('/src/Assets/profile-pic.jpg')] bg-cover h-96 w-96 rounded-full mb-16 border border-white hover:scale-105 ease-out "></div>
       </div>
     </section>
   );

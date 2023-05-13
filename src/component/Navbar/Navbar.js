@@ -28,10 +28,10 @@ const Navbar = () => {
             FORGETTI
           </a>
         </div>
-        <div className="flex max-sm:hidden gap-5 text-white m-2">
+        <div className="flex max-md:hidden gap-5 text-white m-2">
           <Navbarmenu />
         </div>
-        <div className="hidden max-sm:flex m-2 p-2">
+        <div className="hidden max-md:flex m-2 p-2">
           {toggle ? (
             <MdClose color="#fff" size={27} onClick={() => setToggle(false)} />
           ) : (
