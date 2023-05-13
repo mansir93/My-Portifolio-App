@@ -7,7 +7,7 @@ export const Aboutme = () => {
     <section id="aboutme">
           <h3 className="text-center">About Me</h3>
           <p className="text-center">why choose me?</p>
-      <div className="flex justify-center max-w-fit shadow-2xl mr-16 px-16 max-md:flex-col max-md:mx-4">
+      <div className="flex justify-center max-w-fit shadow-2xl mr-16 px-16 max-md:flex-col max-md:mx-4 max-md:px-8">
         <div className="max-md:hidden mx-8 h-auto">
           <img
           className=""
