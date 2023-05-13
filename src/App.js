@@ -1,4 +1,4 @@
-
+import React from 'react';
 import './App.css';
 import { Aboutme } from './component/AboutMe/Aboutme';
 import Contactme from './component/ContactMe/Contactme';
@@ -15,7 +15,7 @@ function App() {
 
       <Navbar />
 
-      {/* <Home /> */}
+      <Home />
 
       {/* <Aboutme /> */}
 

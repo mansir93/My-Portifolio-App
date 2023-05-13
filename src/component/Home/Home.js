@@ -6,12 +6,12 @@ import "./home.css";
 
 const Home = () => {
   return (
-    <div className="home-container">
-      <div className="home-overlay">
-        <Profile />
-        <Shape />
-      </div>
-    </div>
+    <>
+      {/* <div className="home-container"> */}
+      {/* <div className="home-overlay"> */}
+      <Profile />
+      {/* <Shape /> */}
+    </>
   );
 };
 

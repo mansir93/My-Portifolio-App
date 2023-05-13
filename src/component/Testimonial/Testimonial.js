@@ -17,7 +17,7 @@ const Testimonial = () => {
             <div className="col-lg-4">
               <div className="card">
                 <div className="face front-face">
-                  <img src={require("../../Assets/Testimonial/client-1.jpg")}
+                  <img src={require("../../Assets/client-1.jpg")}
                             alt="" className="profile" />
                   <div className="pt-3 text-uppercase name">
                     YAKUBU ABDUL MUTALLIB
@@ -38,7 +38,7 @@ const Testimonial = () => {
             <div className="col-lg-4">
               <div className="card">
                 <div className="face front-face">
-                <img src={require("../../Assets/Testimonial/client-2.jpeg")}
+                <img src={require("../../Assets/client-2.jpeg")}
                             alt="" className="profile" />
                   <div className="pt-3 text-uppercase name">SIEH FRANCIS</div>
                   <div className="designation">Full Stack Developer</div>
@@ -57,7 +57,7 @@ const Testimonial = () => {
             <div className="col-lg-4">
               <div className="card">
                 <div className="face front-face">
-                <img src={require("../../Assets/Testimonial/client-3.jpg")}
+                <img src={require("../../Assets/client-3.jpg")}
                             alt="" className="profile" />
                   <div className="pt-3 text-uppercase name">BAFFOUR AWUAH FELIX</div>
                   <div className="designation">Finance Director</div>

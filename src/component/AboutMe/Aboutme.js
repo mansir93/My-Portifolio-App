@@ -14,7 +14,7 @@ export const Aboutme = () => {
         <div className="row">
           <div className="about-pic col-md-6">
             <img
-              src={require("../../Assets/AboutMe/my-pic.jpg")}
+              src={require("../../Assets/my-pic.jpg")}
               alt="Mansir Abdul Aziz"
             />
           </div>

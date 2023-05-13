@@ -6,7 +6,7 @@
 .testimonial-container .testimonial-background {
   /* height:520px; */
   width: 100%;
-  background-image: url("../../Assets/Testimonial/Testimonial-Background.jpg");
+  background-image: url("../../Assets/Testimonial-Background.jpg");
 }
 .testimonial-container h3 {
   text-align: center;
