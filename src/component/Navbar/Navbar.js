@@ -42,7 +42,7 @@ const Navbar = () => {
             />
           )}
           {toggle && (
-            <div className="Navbar-animation flex flex-col justify-end items-end text-end p-8 absolute top-10 right-0 mr-4 min-w-fit rounded drop-shadow">
+            <div className="Navbar-animation text-white bg-slate-600 flex flex-col justify-end items-end text-end p-8 absolute top-10 right-0 mr-4 min-w-fit rounded drop-shadow">
               <Navbarmenu />
             </div>
           )}
