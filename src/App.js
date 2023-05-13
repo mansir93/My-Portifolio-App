@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Profile,Aboutme, Resume,Testimonial, Contactoption } from './component';
+import { Navbar, Profile,Aboutme } from './component';
 import './App.css';
 
 
