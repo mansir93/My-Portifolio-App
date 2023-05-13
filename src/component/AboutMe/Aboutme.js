@@ -8,7 +8,7 @@ export const Aboutme = () => {
           <h3 className="text-center">About Me</h3>
           <p className="text-center">why choose me?</p>
       <div className="flex justify-center max-w-fit shadow-2xl mx-16 max-md:flex-col max-md:mx-4">
-        <div className="max-md:hidden mx-8">
+        <div className="max-md:hidden mx-8 h-auto">
           <img
             src={require("../../Assets/my-pic.jpg")}
             alt="Mansir Abdul Aziz"
