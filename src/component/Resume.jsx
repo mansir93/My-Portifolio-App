@@ -1,42 +1,99 @@
 import React, { useState } from "react";
 
 const Resume = () => {
-  const [activeTabIndex, setActiveTabIndex] = useState(0);
+  const [activeTab, setActiveTab] = useState(1);
 
   const handleTabClick = (tabIndex) => {
-    setActiveTabIndex(tabIndex);
+    setActiveTab(tabIndex);
   };
 
   return (
-    <section id="resume" className="mt-8">
-      <h3 className="text-center">Resume</h3>
-      <div className="flex px-8">
-        <div className="flex flex-col bg-slate-600 w-8" />
-        <div className="flex flex-col p-8">
-          <button
-            onClick={() => handleTabClick(0)}
-            className={activeTabIndex === 0 ? "active" : ""}
+    <section id="resume" className="mt-16">
+      <h3 className="text-center m-8">Resume</h3>
+      <div className="flex mx-8">
+        <div className="flex flex-col bg-slate-600 w-6" />
+        <div className="flex justify-around flex-col text-xl" dir="rtl">
+          <div
+            className={
+              activeTab === 1
+                ? "bg-slate-600 text-white px-8 my-8 rounded-s-lg resume-tabs-animate"
+                : "px-8 my-8"
+            }
           >
-            Tab 1
-          </button>
-          <button
-            onClick={() => handleTabClick(1)}
-            className={activeTabIndex === 1 ? "active" : ""}
+            <button onClick={() => handleTabClick(1)}>Education</button>
+          </div>
+          <div
+            className={
+              activeTab === 2
+                ? "bg-slate-600 text-white px-8 my-8 rounded-s-lg resume-tabs-animate"
+                : "px-8 my-8"
+            }
           >
-            Tab 2
-          </button>
-          <button
-            onClick={() => handleTabClick(2)}
-            className={activeTabIndex === 2 ? "active" : ""}
+            <button onClick={() => handleTabClick(2)}>Coding Skills</button>
+          </div>
+          <div
+            className={
+              activeTab === 3
+                ? "bg-slate-600 text-white px-8 my-8 rounded-s-lg resume-tabs-animate"
+                : "px-8 my-8"
+            }
           >
-            Tab 3
-          </button>
+            <button onClick={() => handleTabClick(3)}>Projects</button>
+          </div>
+          <div
+          className={
+            activeTab === 4
+              ? "bg-slate-600 text-white px-8 my-8 rounded-s-lg resume-tabs-animate"
+              : "px-8 my-8"
+          }
+          >
+            <button onClick={() => handleTabClick(4)}>Interest</button>
+          </div>
         </div>
+        <div className="flex flex-col bg-slate-600 w-1 m-1" />
 
-        <div className="tab-content">
-          {activeTabIndex === 0 && <p>This is the content for Tab 1</p>}
-          {activeTabIndex === 1 && <p>This is the content for Tab 2</p>}
-          {activeTabIndex === 2 && <p>This is the content for Tab 3</p>}
+        <div className="px-4">
+          {activeTab === 1 && (
+            <div>
+              <div>
+                University of Professional Studies, Accra BSc. Information
+                Technology Management -2021 - 2025
+              </div>
+              <div>
+                IPMC College of Technology Certificate in Software Programming
+                2020 - 2021
+              </div>
+              <div>
+                High School Sakafia Islamic Senior High School 2017 - 2020
+              </div>
+            </div>
+          )}
+
+          {activeTab === 2 &&
+          <div>
+            <div>Programming skills</div>
+            <div>Programming skills</div>
+            <div>Programming skills</div>
+            <div>Programming skills</div>
+            <div>Programming skills</div>
+          </div>
+          }
+
+          {activeTab === 3 && <div>
+          <div>projects</div>
+          <div>projects</div>
+          <div>projects</div>
+          <div>projects</div>
+          <div>projects</div>
+          </div>
+          }
+
+          {activeTab === 4 && (
+            <div>
+               I like to do researching.  I Love learning new skills.  I Love
+              to go on Tour.  I enjoy music.
+            </div>
+          )}
         </div>
       </div>
     </section>

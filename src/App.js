@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Profile, Aboutme, Resume } from "./component";
+import { Navbar, Profile, Aboutme, Resume,Testimonial } from "./component";
 
 
 import "./App.css";
@@ -17,7 +17,7 @@ function App() {
 
       <Resume />
 
-      {/* <Testimonial /> */}
+      <Testimonial />
 
       {/* <Contactoption /> */}
     </div>
