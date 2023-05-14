@@ -1,11 +1,14 @@
 import React from "react";
 import { Navbar, Profile, Aboutme, Resume } from "./component";
-import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 import "./App.css";
+// import Test from "./component/Test";
 
 function App() {
   return (
     <div className="App">
+
       <Navbar />
 
       <Profile />

@@ -1,34 +1,43 @@
-import React from "react";
-import Tab from "react-bootstrap/Tab";
-import Tabs from "react-bootstrap/Tabs";
+import React, { useState } from "react";
 
 const Resume = () => {
+  const [activeTabIndex, setActiveTabIndex] = useState(0);
+
+  const handleTabClick = (tabIndex) => {
+    setActiveTabIndex(tabIndex);
+  };
+
   return (
-    <section id="resume">
-      <h3>Resume</h3>
-      <div>
-        <Tabs
-          defaultActiveKey="profile"
-          id="justify-tab-example"
-          className="mb-3"
-          justify
-        >
-          <Tab eventKey="home" title="Education">
-            University of Professional Studies, Accra BSc. Information
-            Technology Management 2021 - 2025 IPMC College of Technology
-            Certificate in Software Programming2020 - 2021 High School Sakafia
-            Islamic Senior High School 2017 - 2020
-          </Tab>
-          <Tab eventKey="profile" title="Coding skills">
-            Programming skills
-          </Tab>
-          <Tab eventKey="longer-tab" title="Projects">
-            projects
-          </Tab>
-          <Tab eventKey="contact" title="Interest">
-            Interest
-          </Tab>
-        </Tabs>
+    <section id="resume" className="mt-8">
+      <h3 className="text-center">Resume</h3>
+      <div className="flex px-8">
+        <div className="flex flex-col bg-slate-600 w-8" />
+        <div className="flex flex-col p-8">
+          <button
+            onClick={() => handleTabClick(0)}
+            className={activeTabIndex === 0 ? "active" : ""}
+          >
+            Tab 1
+          </button>
+          <button
+            onClick={() => handleTabClick(1)}
+            className={activeTabIndex === 1 ? "active" : ""}
+          >
+            Tab 2
+          </button>
+          <button
+            onClick={() => handleTabClick(2)}
+            className={activeTabIndex === 2 ? "active" : ""}
+          >
+            Tab 3
+          </button>
+        </div>
+
+        <div className="tab-content">
+          {activeTabIndex === 0 && <p>This is the content for Tab 1</p>}
+          {activeTabIndex === 1 && <p>This is the content for Tab 2</p>}
+          {activeTabIndex === 2 && <p>This is the content for Tab 3</p>}
+        </div>
       </div>
     </section>
   );
